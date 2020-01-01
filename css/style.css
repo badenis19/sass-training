@@ -46,5 +46,6 @@ header button::after {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: pink;
+  width: 80%;
 }
 /*# sourceMappingURL=style.css.map */

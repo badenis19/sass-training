@@ -3,5 +3,7 @@
 .contact {
     background: $primaryBtn;
     @include flexCenter(column, pink);
+    // calculations
+    width: 100% - 20%;
 } 
 
