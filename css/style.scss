@@ -1,6 +1,7 @@
 @import "./header.scss";
 
-.contact button {
+.contact {
     background: $primaryBtn;
-}
+    @include flexCenter(column, pink);
+} 
 

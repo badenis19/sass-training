@@ -1,20 +1,25 @@
 @import "./variables.scss";
 
-header {
-    color: $textColor;
-    background: rgb(24, 182, 32);
+// mixins, similar to js functioon 
+@mixin flexCenter($direction, $background) {
+    height: 100vh;  
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+    background-color: $background;
+}
 
-
+header {
+    @include flexCenter(column, rgb(199, 84, 7));
+    color: $textColor;
     button {
         background: $primaryBtn;
         // use & operator to add other options
         &:hover {
             background: blue;
         }
-
-        // to add text
+        // to add text at the end of button
         &::after {
             content: " You";
         }
